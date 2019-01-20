@@ -12,10 +12,10 @@ layout: default
 				<h2>{{- page.title -}}</h2>
 				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
 			</header>
-	    {{- content -}}
-	{% if page.unity_dir %}
+		  	{% if page.unity_dir %}
    		{% include page__unity.html %}
 	{% endif %}
+	    {{- content -}}
 	  </div>
 	</article>
 </div>
