@@ -8,6 +8,9 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 <html>
 	{%- include head.html -%}
 	<body>
+		{% if page.unity_dir %}
+		{% include page__unity.html %}
+	{% endif %}
 		{{- content -}}
 		{%- include footer.html -%}
 	</body>
