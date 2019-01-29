@@ -30,7 +30,7 @@
             <span class="{{ _class }} {{ _icon }}">{{- _title -}}</span>
           </a></li>
         {%- else -%}
-          <li><a href="{{- '/' | absolute_url -}}" id="broken-link"><span class="icon fa-unlink">[broken link]</span></a></li>
+          <li><a href="{{- absolute_url -}}" id="broken-link"><span class="icon fa-unlink">[broken link]</span></a></li>
         {%- endif -%}
       {%- endfor -%}
     {%- endunless -%}
